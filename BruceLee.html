@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Inconsolata">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|3d-float">
 <meta name="keywords" content="Sohel Ahammad, HTML & CSS & JAVA" />
 <style>
 * {
@@ -84,9 +85,14 @@ padding: 20px;
 .header {
   padding: 80px;
   text-align: center;
-  background: #cc5663;
+  /*background: #cc5663;*/
   color: white;
-  
+ background-image: url("https://7wallpapers.net/wp-content/uploads/12_Bruce-Lee.jpg");
+min-height: 100px; 
+ background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Increase the font size of the heading */
 .header h1 {
@@ -229,10 +235,14 @@ height: 30%;
 .footer {
   padding: 20px;
   text-align: center;
-  background: #00FF7F;
-  color: #000080;
-}
-
+  background: #222;
+  color: #FFF;
+  }
+ .name {
+ font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+  }
 .fa{
 padding: 10px;
 font-size: 10px;
@@ -285,14 +295,34 @@ height: 50px;
     width: 100%;
   }
 }
+.fot{
+   font-family: 'Inconsolata', serif;
+  font-size: 20px;
+}
+  @font-face {
+    font-family: 'MyWebFont';
+    src: url('/webfonts/TheSansMonoWeb-SCdW4.woff2') format('woff2');
+}
+  .con{
+    font-family: 'MyWebFont', monospace;
+    font-weight: normal; 
+  }
+  .letter{
+    letter-spacing: 2px;
+  }
+  .ls{
+        letter-spacing: 4px;
+    
+  }
 </style>
 </head>
 <body>
 
+<div class="para">
 <div class="header">
   <h1><u><strong>Bruce Lee (李振藩)</strong></u></h1>
   <h5>Game-changer of martial arts, philosophy, and entertainment.</h5>
-</div>
+</div></div>
 
 
 
@@ -522,17 +552,20 @@ You must be shapeless, formless, like water. When you pour water in a cup, it be
 	</div>
 </div>
 </div> <hr>
-  <div class="tts">
+  <div class="Hero"><div class="tts">
     <h2>Heartly <br>Dedicated to My Bruce Lee.</h2>
     
     <h3>"Your life was a blessing, your memory a treasure, you are loved beyond words and missed beyond measure".</h3>
-  </div><hr>
+  </div></div><hr>
 
 <div class="footer">
 <footer class = "text-center">
-   
-<h2>Contact Me</h2><br>
+ <div class="letter">  
+<h2 class="con">Contact Me</h2><br></div>
+  
+<div class="name">I am Sohel Ahammad.</div><br>
 <a href="https://drive.google.com/file/d/1tpwIjTInDJ3YkLqsH8QJCySTJHwFWe_Q/view?usp=sharing">
+<br>
 <img src="https://media.licdn.com/dms/image/D5603AQGFyWFq6A3Ccw/profile-displayphoto-shrink_400_400/0/1672315959040?e=1678924800&v=beta&t=rthVHjcYSYHTcq4-ZMYSvKqsFSMrYpktB0e8TEQMF_U" alt="I am Sohel Ahammad" width="140px" height="130px">
 
 </a><br>
@@ -541,9 +574,11 @@ You must be shapeless, formless, like water. When you pour water in a cup, it be
 <center><a href="https://m.facebook.com/100052789565175/"><i class="fa fa-facebook"></i></a>
 <a href="https://www.linkedin.com/mwlite/in/sohel-ahammad-6219a421a"><i class="fa fa-linkedin"></i></a>
 <a href="https://www.instagram.com/sohel.ahammad.73/"><i class="fa fa-instagram"></i></a>
-<a href="https://github.com/Sohailahammmad"><i class="fa fa-github"></i></a></center>
-<br><center><p class="ls">All Rights Are Reserved Copyright © 2022-2060.</p>
+<a href="https://github.com/Sohailahammmad"><i class="fa fa-github"></i></a></center><div class="fot">
+<br><center><p class="ls">All Rights Are Reserved <br>
+  <div class="ls">Copyright © 2022-2060.</div></p>
 Privacy Policy | Cookies Policy | Terms of Use<center>
+</center><div>
 </div>
 </div>
 
