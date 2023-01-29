@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bruce Lee Tribute</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+<meta name="keywords" content="Sohel Ahammad, HTML & CSS & JAVA" />
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+body {
+  font-family: "Trirong", serif;
+  margin: 0;
+}
+
+.mySlides {
+display: none;
+}
+.simg {
+vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.Fist{
+
+margin-left: 70px;
+padding: 20px;
+
+
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #cc5663;
+  color: white;
+}
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+    text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  
+}
+.caption {
+   text-align: center;
+   background-color: #fffce0;
+   padding: 10px 10px 10px 10px;
+    background-color: #808080;
+    font-family: "Sofia", serif;
+
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.tribute{
+padding: 40px;
+margin-left: 30px;
+text-align: left;
+
+}
+.quote {
+   font-family: "Audiowide", sans serif;
+   background-color: #fffce0;
+   padding: 60px 60px 60px 60px;
+   border-radius: 40px;
+     background-color: #C0C0C0;
+    text-align: left;
+
+}
+
+.inspire1 {
+   text-align: left;
+
+}
+
+.inspire2 {
+   text-align: right;
+}
+
+
+/* Fake image, just for this example */
+.img1 {
+  width: 50%;
+  height: 30%;
+  padding: 10px;
+}
+
+.img2 {
+  height: 30%;
+  width: 50%;
+  padding: 10px;
+}
+
+
+.img3 {
+  width: 50%;
+height: 30%;
+  padding: 10px;
+}
+
+.img4 {
+  width: 50%;
+height: 30%;
+  padding: 10px;
+}
+
+.img5 {
+height: 30%;
+  width: 50%;
+  padding: 10px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.fa{
+padding: 10px;
+font-size: 10px;
+width: 25px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.fa:hover{
+padding: 35px;
+font-size: 27px;
+width: 35px;
+opacity: 0.9;
+height: 50px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-github{
+  background: #2c4762;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><u><strong>Bruce Lee (李振藩)</strong></u></h1>
+  <h5>Game-changer of martial arts, philosophy, and entertainment.</h5>
+</div>
+
+
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#bruce">Bruce Lee Best Movies</a>
+  <a href="#down" class="right">Contact</a>
+</div>
+
+<div class="Fist">
+<h2 id="home">TRIBUTE <br> LEGEND OF BRUCE LEE</h2>
+<p>Martial artist, movie star and cultural icon:</p>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/2071620.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/2071831.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/19404.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/165018.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/2071617.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/2071635.jpg" style="width:100%">
+  </div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/2071638.jpg" style="width:100%">
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/2071652.jpg" style="width:100%">
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/2071654.jpg" style="width:100%">
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img class="simg" src="https://wallpaperaccess.com/full/2071870.jpg" style="width:100%">
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<hr>
+<div class="row">
+  <div class="side">
+<div id="about">
+
+    <h2>About Bruce Lee</h2>
+
+    <h4>Photo of Lee:</h4>
+    <img class="img1" src="https://wallpaperaccess.com/full/2071715.jpg">
+      <hr>
+     <div class = "caption"><i>
+         Jun Fan "Bruce" Lee was a renowned martial artist and action movie actor, as seen holding nunchucks here. </i>
+         <br>
+         <a href="https://www.brucelee.com/podcast/" target = "_blank">(source)</a>
+      </div>
+<hr>
+    <div class="tribute">
+
+      <h2><u>Time Line of Bruce Lee's Life & Death </u>:-</h2>
+      <ul>
+        <li>
+          <strong>1940</strong> -
+          Bruce was born in San Francisco, USA.
+        </li>
+        <li>
+          <strong>1952</strong> -
+          Bruce starts school at the age of 12.
+        </li>
+        <li>
+          <strong>1954</strong> -
+          At the age of 13, Bruce takes up the study of wing chun gung fu under renowned wing chun master, Yip Man.
+        </li>
+        <li>
+          <strong>1959</strong> -
+          After living for several months in San Fransisco, Bruce moves to Seattle to continue his High School
+          education. He works as a live-in waiter for Ruby Chow, her husband was a friend of Bruce's father.
+        </li>
+        <li>
+          <strong>1959</strong> -
+          Bruce begins teaching Martial Arts in the US. He teaches his own style he calls "Jun Fan Gung Fu" which
+          literaly translated as "Bruce Lee's Kung Fu".
+        </li>
+        <li>
+          <strong>1959</strong> -
+          Bruce moves to San Fransisco to live with his older sister Agnes.
+        </li>
+        <li>
+          <strong>1961</strong> -
+          Bruce enrolls at the University of Washington.
+        </li>
+        <li>
+          <strong>1964</strong> -
+          Bruce drops out of University and moves to Oakland.
+        </li>
+        <li>
+          <strong>1967</strong> -
+          During his first season of "The Green Hornet" Bruce creates his own iconic martial art style he called "Jeet
+          Kune Do".
+        </li>
+        <li>
+          <strong>1970</strong> -
+          Bruce returns to China.
+        </li>
+        <li>
+          <strong>1971</strong> -
+          Bruce returned to China after struggling to make it big in Hollywood. He did however become a huge success
+          when moving to Hong Kong. Nearly straight away, he was signed up to star in two of his iconic films "The Big
+          Boss" and "Fist of Fury" which were hugely successful in Asian cinema.
+        </li>
+        <li>
+          <strong>1972</strong> -
+          The highlight of Bruce's career came in 1972, when at the peak of his global popularity; He wrote, directed
+          and starred in his biggest hit film "The Way of The Dragon".
+        </li>
+        <li>
+          <strong>1973</strong> -
+          Bruce agreed and starred in "Enter The Dragon" in which he would play the lead in what would be his most
+          famous film, but unfortunately would also be his last...
+        </li>
+        <li>
+          <strong>1973</strong> - Bruce Lee dies at age of 33.
+        </li>
+      </ul>
+	</div>
+<hr>
+<br>
+
+
+   <div class = "quote">
+      <span style="font-size:150px;line-height:0.6em;opacity:0.2">❝</span>
+      <div class = "inspire1">
+         <h3><strong>
+
+You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you
+          pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. Water
+          can drip and it can crash. Become like water my friend.
+ </strong></h3>
+      </div>
+      <div class = "inspire2">
+         - Bruce Lee
+      </div>
+   </div>
+<hr>
+
+
+   <h1 id="bruce"><u>My Favourite Movies </u>:-</h1>
+    <hr>
+	<h2><u>The Big Boss</u></h2>
+	<h5> Released in 1971</h5>
+    <img class="img2" src="https://www.asiabluray.com/image/twinchaptertrading/image/cache/data/all_product_images/product-1341/e4f198a7aee3cabe307f9c3c6d82f0eb-800x1200.jpg"><br>
+      	
+	<h2><u>Fist of Fury</u></h2>
+	<h5> Released in 1972 </h5>
+   
+	<img class="img3" src="https://images.justwatch.com/poster/78796919/s718/fist-of-fury.%7Bformat%7D"><br>
+    	
+	<h2><u>  Enter the Dragon</u></h2>
+<h5> Released in 1973 </h5>
+   
+	<img class="img4" src="https://e0.pxfuel.com/wallpapers/750/77/desktop-wallpaper-enter-the-dragon-bruce-lee-martial-arts-movie-poster-logo-and-mobile-background-enter-the-dragon.jpg">
+
+	<h2><u>Game of Death </u></h2>
+<h5> Released in 1978</h5>
+   
+	<img class="img5" src="https://wallpaperaccess.com/full/2071614.jpg">
+	</div>
+</div>
+</div>
+
+<div class="footer">
+<footer class = "text-center">
+   
+<h2>Contact Me</h2><br>
+<a href="https://drive.google.com/file/d/1tpwIjTInDJ3YkLqsH8QJCySTJHwFWe_Q/view?usp=sharing">
+<img src="https://media.licdn.com/dms/image/D5603AQGFyWFq6A3Ccw/profile-displayphoto-shrink_400_400/0/1672315959040?e=1678924800&v=beta&t=rthVHjcYSYHTcq4-ZMYSvKqsFSMrYpktB0e8TEQMF_U" alt="I am Sohel Ahammad" width="90px" height="90px">
+
+</a><br>
+
+<div id="down">
+<center><a href="https://m.facebook.com/100052789565175/"><i class="fa fa-facebook"></i></a>
+<a href="https://www.linkedin.com/mwlite/in/sohel-ahammad-6219a421a"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.instagram.com/sohel.ahammad.73/"><i class="fa fa-instagram"></i></a>
+<a href="https://github.com/Sohailahammmad"><i class="fa fa-github"></i></a></center>
+<br><center><p class="ls">All Rights Are Reserved Copyright © 2022-2060.</p>
+Privacy Policy | Cookies Policy | Terms of Use<center>
+</div>
+</div>
+
+</footer>
+</div>
+
+</body>
+</html>
